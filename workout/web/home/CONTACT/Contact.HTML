@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Section</title>
+  </head>
+
+  <body>                
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="/web/home/Home/Home.html"> HOME</a></li>
+                    <li><a href="#"> ABOUT</a></li>
+                    <li><a href="/web/home/Services/sevices.html"> SERVICES</a></li>
+                    <li><a href="#"> SHOP</a></li>
+                    <li><a href="/web/home/CONTACT/Contact.html"> CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="/web/home/CONTACT/image/backgroung/menu-4-48.png" id="menu">
+        </div> 
+
+    <script>
+        var menuBtn=document.getElementById("menuBtn")
+        var sideNav=document.getElementById("sideNav")
+        var manu=document.getElementById("menu")
+        sideNav.style.right =="-250px"
+        menuBtn.onclick=function()
+        {
+            if(sideNav.style.right =="-250px")
+            {
+                sideNav.style.right ="0";
+            }
+            else
+            {
+                sideNav.style.right="-250px";
+            }
+        }
+    </script> 
+
+    <div class="container">
+      <main class="row">
+        <section class="col left">
+          <div class="contactTitle">
+            <h2>Get In Touch</h2>
+            <p>What hurts you today makes you stronger tomorrow.</p>
+          </div>
+          <div class="contactInfo">
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="details">
+                <span>Phone</span>
+                <span>+91 8193877056</span>
+              </div>
+            </div>
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="details">
+                <span>Email</span>
+                <span>Sparshgoyal90@gmail.com</span>
+              </div>
+            </div>
+            <div class="iconGroup">
+              <div class="icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="details">
+                <span>Location</span>
+                <span>Meerut, Uttar Pradesh, Meerut</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="socialMedia">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </section>
+
+        <section class="col right">
+          <form class="messageForm">
+            <div class="inputGroup halfWidth">
+              <input type="text" name="" required="required" />
+              <label>Your Name</label>
+            </div>
+
+            <div class="inputGroup halfWidth">
+              <input type="email" name="" required="required" />
+              <label>Email</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <input type="text" name="" required="required" />
+              <label>Subject</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <textarea required="required"></textarea>
+              <label>Say Something</label>
+            </div>
+
+            <div class="inputGroup fullWidth">
+              <button>Send Message</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+	<footer class="footer">
+        <div class="contain">
+            <div class="raw">
+
+                <div class="footer-col">
+                    <h4>More us</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="/web/home/CONTACT/Contact.html">Contact Us</a></li>
+                            <li><a href="#">&copy; 2024 | MR GOYAL</a></li>
+                        </ul>
+                </div>
+                                
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
